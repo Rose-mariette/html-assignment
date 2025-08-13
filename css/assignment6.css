@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg {
+    background-color: rgba(128, 128, 128, 0.068);
+    height: 600px;
+    margin-top: 20px;
+    margin-inline: 250px;
+    border-radius: 3px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px 7px red;
+}
+.general {
+display: grid;
+grid-template-columns:repeat(3, 1fr) ;
+
+gap: 20px;
+grid-template-rows: minmax(60px, auto) minmax(300px, auto) minmax(80px, auto) minmax(60px, auto);
+margin-inline: 50px;
+
+grid-template-areas: "logo menus menus" "main main aside" "sponsors sponsors sponsors" "footer footer footer" ;
+
+
+}
+.item {
+    border: 1px dashed black;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.logo {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.menus {
+    grid-area: menus;
+    padding-left: 400px;
+    padding-top: 10px;
+}
+.main {
+    grid-area: main;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+.aside {
+    padding-top: 10px;
+    padding-left: 140px;
+}
+.sponsors {
+    grid-area: sponsors;
+    text-align: center;
+}
+p {
+    position: relative;
+    top: 30px;
+}
+
+.footer {
+    grid-area: footer;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.item1 {
+    height: 40px;
+    width: 50px;
+    margin-bottom: 20px;
+
+
+    background-color:rgba(128, 128, 128, 0.801) ;
+}
+.items {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
